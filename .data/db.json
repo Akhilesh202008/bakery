@@ -27,10 +27,10 @@
       "name": "Test Client",
       "phone": "918056702505",
       "email": "test@example.com",
-      "totalInquiries": 5,
-      "lastInquiryAt": "2026-10-19T06:29:25.407Z",
+      "totalInquiries": 7,
+      "lastInquiryAt": "2026-10-19T07:23:22.763Z",
       "createdAt": "2026-10-19T06:07:26.601Z",
-      "updatedAt": "2026-10-19T06:29:25.407Z"
+      "updatedAt": "2026-10-19T07:23:22.763Z"
     },
     {
       "id": "cp-xsq0n6",
@@ -44,6 +44,44 @@
     }
   ],
   "inquiries": [
+    {
+      "id": "inq-iuf6oyh4",
+      "referenceCode": "AP-2026-6050",
+      "clientName": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "35-50 guests (2-Tier Grande)",
+      "eventDate": "2026-11-20",
+      "designNotes": "Edible gold leaf accents",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting scheduled",
+      "estimatedPrice": 280,
+      "whatsappSent": false,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T07:23:22.763Z",
+      "updatedAt": "2026-10-19T07:23:22.764Z"
+    },
+    {
+      "id": "inq-imkcg7my",
+      "referenceCode": "AP-2026-6594",
+      "clientName": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "35-50 guests (2-Tier Grande)",
+      "eventDate": "2026-11-20",
+      "designNotes": "Edible gold leaf accents",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting scheduled",
+      "estimatedPrice": 280,
+      "whatsappSent": false,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T07:22:38.289Z",
+      "updatedAt": "2026-10-19T07:22:38.290Z"
+    },
     {
       "id": "inq-p00hlis6",
       "referenceCode": "AP-2026-9784",
@@ -195,6 +233,26 @@
   ],
   "messageLogs": [
     {
+      "id": "msg-64wwnshj",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "messageContent": "Test outbound notification",
+      "status": "SENT",
+      "metaMessageId": "wamid.test.12345",
+      "createdAt": "2026-10-19T07:23:22.769Z"
+    },
+    {
+      "id": "msg-wht1t844",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "messageContent": "Test outbound notification",
+      "status": "SENT",
+      "metaMessageId": "wamid.test.12345",
+      "createdAt": "2026-10-19T07:22:38.291Z"
+    },
+    {
       "id": "msg-wnu6slid",
       "direction": "OUTBOUND",
       "channel": "WHATSAPP_CLOUD_API",
@@ -272,6 +330,96 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "aud-i9y0p6b",
+      "entity": "Cake",
+      "entityId": "cake-iaites2f",
+      "action": "CAKE_DELETED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" permanently deleted",
+      "createdAt": "2026-10-19T07:23:22.779Z"
+    },
+    {
+      "id": "aud-xq4ch2i",
+      "entity": "Cake",
+      "entityId": "cake-iaites2f",
+      "action": "CAKE_UPDATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" updated: isAvailable, startingPrice",
+      "createdAt": "2026-10-19T07:23:22.778Z"
+    },
+    {
+      "id": "aud-mr39aln",
+      "entity": "Cake",
+      "entityId": "cake-iaites2f",
+      "action": "CAKE_CREATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "New cake model added: \"Pistachio Rose Choux Gateau\" ($85)",
+      "createdAt": "2026-10-19T07:23:22.776Z"
+    },
+    {
+      "id": "aud-jt65vv6",
+      "entity": "Inquiry",
+      "entityId": "inq-iuf6oyh4",
+      "action": "UPDATED",
+      "performedBy": "Admin / Pastry Chef",
+      "details": "Inquiry AP-2026-6050 updated with: status, internalNotes, estimatedPrice",
+      "createdAt": "2026-10-19T07:23:22.764Z"
+    },
+    {
+      "id": "aud-4fspzxx",
+      "entity": "Inquiry",
+      "entityId": "inq-iuf6oyh4",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Test Client (AP-2026-6050)",
+      "createdAt": "2026-10-19T07:23:22.763Z"
+    },
+    {
+      "id": "aud-v7p5jzu",
+      "entity": "Cake",
+      "entityId": "cake-y0w3bitq",
+      "action": "CAKE_DELETED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" permanently deleted",
+      "createdAt": "2026-10-19T07:22:38.294Z"
+    },
+    {
+      "id": "aud-ljexhr6",
+      "entity": "Cake",
+      "entityId": "cake-y0w3bitq",
+      "action": "CAKE_UPDATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" updated: isAvailable, startingPrice",
+      "createdAt": "2026-10-19T07:22:38.293Z"
+    },
+    {
+      "id": "aud-btve5te",
+      "entity": "Cake",
+      "entityId": "cake-y0w3bitq",
+      "action": "CAKE_CREATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "New cake model added: \"Pistachio Rose Choux Gateau\" ($85)",
+      "createdAt": "2026-10-19T07:22:38.293Z"
+    },
+    {
+      "id": "aud-cezqt65",
+      "entity": "Inquiry",
+      "entityId": "inq-imkcg7my",
+      "action": "UPDATED",
+      "performedBy": "Admin / Pastry Chef",
+      "details": "Inquiry AP-2026-6594 updated with: status, internalNotes, estimatedPrice",
+      "createdAt": "2026-10-19T07:22:38.290Z"
+    },
+    {
+      "id": "aud-w4wfvi5",
+      "entity": "Inquiry",
+      "entityId": "inq-imkcg7my",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Test Client (AP-2026-6594)",
+      "createdAt": "2026-10-19T07:22:38.289Z"
+    },
     {
       "id": "aud-mal43tk",
       "entity": "Cake",

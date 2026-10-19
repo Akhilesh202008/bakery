@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import path from 'node:path';
 import fs from 'node:fs';
+import http from 'node:http';
 import { fileURLToPath } from 'node:url';
 import { apiRouter } from './src/server/routes.js';
 
@@ -12,6 +13,7 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
+  const server = http.createServer(app);
   const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
   const isProduction = process.env.NODE_ENV === 'production';
 
@@ -42,8 +44,7 @@ async function startServer() {
     const vite = await createServer({
       server: {
         middlewareMode: true,
-        host: '0.0.0.0',
-        port: PORT,
+        hmr: false,
       },
       appType: 'spa',
     });
@@ -57,7 +58,7 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
+  server.listen(PORT, '0.0.0.0', () => {
     console.log(`🍰 Artisanal Patisserie Server running at http://0.0.0.0:${PORT}`);
     console.log(`📱 Primary Contact: ${process.env.PRIMARY_CONTACT_PHONE || '8056702505'}`);
     console.log(`📱 Secondary Contact: ${process.env.SECONDARY_CONTACT_PHONE || '7401039450'}`);

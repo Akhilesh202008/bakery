@@ -13,6 +13,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      // Gracefully ignore HMR WebSocket connection errors in sandbox/iFrame environment
+      (function() {
+        function isHmrError(err) {
+          if (!err) return false;
+          const s = String(err.message || err.stack || err || '');
+          return s.includes('WebSocket') ||
+                 s.includes('createWebSocketModuleRunnerTransport') ||
+                 s.includes('@vite/client') ||
+                 s.includes('vite-hmr');
+        }
+        window.addEventListener('error', function(event) {
+          if (isHmrError(event.error) || isHmrError(event.message) || (event.filename && event.filename.includes('@vite/client'))) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+            return true;
+          }
+        }, true);
+        window.addEventListener('unhandledrejection', function(event) {
+          if (isHmrError(event.reason)) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+      })();
+    </script>
   </head>
   <body class="bg-[#fdf9f3] text-[#1c1c18] font-sans antialiased selection:bg-[#fdc7cb] selection:text-[#321917]">
     <div id="root"></div>
