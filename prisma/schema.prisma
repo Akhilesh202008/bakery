@@ -1,0 +1,161 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  PASTRY_CHEF
+  CONCIERGE
+}
+
+enum InquiryStatus {
+  NEW
+  CONTACTED
+  QUOTED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum MessageDirection {
+  INBOUND
+  OUTBOUND
+}
+
+enum MessageStatus {
+  QUEUED
+  SENT
+  DELIVERED
+  READ
+  FAILED
+}
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  name         String
+  passwordHash String
+  role         Role       @default(CONCIERGE)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  auditLogs    AuditLog[]
+
+  @@map("users")
+}
+
+model CustomerProfile {
+  id             String    @id @default(uuid())
+  name           String
+  phone          String    @unique
+  email          String?
+  notes          String?
+  totalInquiries Int       @default(1)
+  lastInquiryAt  DateTime  @default(now())
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  inquiries      Inquiry[]
+
+  @@index([phone])
+  @@map("customer_profiles")
+}
+
+model Inquiry {
+  id             String           @id @default(uuid())
+  referenceCode  String           @unique
+  clientName     String
+  phone          String
+  email          String?
+  occasion       String
+  flavourProfile String
+  guestCount     String
+  eventDate      DateTime
+  designNotes    String?
+  status         InquiryStatus    @default(NEW)
+  internalNotes  String?
+  estimatedPrice Decimal?         @db.Decimal(10, 2)
+  whatsappSent   Boolean          @default(false)
+  customerId     String?
+  customer       CustomerProfile? @relation(fields: [customerId], references: [id], onDelete: SetNull)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  messageLogs    MessageLog[]
+
+  @@index([referenceCode])
+  @@index([phone])
+  @@index([status])
+  @@index([eventDate])
+  @@index([createdAt])
+  @@map("inquiries")
+}
+
+model MessageLog {
+  id             String           @id @default(uuid())
+  inquiryId      String?
+  inquiry        Inquiry?         @relation(fields: [inquiryId], references: [id], onDelete: Cascade)
+  direction      MessageDirection @default(OUTBOUND)
+  channel        String           @default("WHATSAPP_CLOUD_API")
+  recipientPhone String
+  senderPhone    String?
+  messageContent String
+  status         MessageStatus    @default(SENT)
+  metaMessageId  String?
+  errorPayload   String?
+  createdAt      DateTime         @default(now())
+
+  @@index([inquiryId])
+  @@index([recipientPhone])
+  @@index([metaMessageId])
+  @@map("message_logs")
+}
+
+model AuditLog {
+  id          String   @id @default(uuid())
+  entity      String
+  entityId    String
+  action      String
+  performedBy String?
+  user        User?    @relation(fields: [performedBy], references: [id], onDelete: SetNull)
+  details     String?
+  createdAt   DateTime @default(now())
+
+  @@index([entity, entityId])
+  @@map("audit_logs")
+}
+
+model Cake {
+  id             String   @id @default(uuid())
+  name           String
+  slug           String   @unique
+  description    String
+  category       String
+  tag            String?
+  tagType        String?  @default("bestseller")
+  startingPrice  Decimal  @db.Decimal(10, 2)
+  sizePriceNote  String?
+  sizes          Json?
+  imageUrl       String
+  altText        String?
+  flavours       String[]
+  isEggless      Boolean  @default(false)
+  dietaryNote    String?  @default("Contains Eggs")
+  isAvailable    Boolean  @default(true)
+  isFeatured     Boolean  @default(false)
+  leadTimeHours  Int      @default(48)
+  customizations String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([category])
+  @@index([isAvailable])
+  @@index([isFeatured])
+  @@map("cakes")
+}
+

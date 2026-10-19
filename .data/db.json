@@ -1,0 +1,635 @@
+{
+  "users": [
+    {
+      "id": "u-admin-1",
+      "email": "atelier@artisanalpatisserie.com",
+      "name": "Master Pâtissier",
+      "passwordHash": "atelier2026",
+      "role": "ADMIN",
+      "createdAt": "2026-10-19T06:07:26.578Z",
+      "updatedAt": "2026-10-19T06:07:26.578Z"
+    }
+  ],
+  "customerProfiles": [
+    {
+      "id": "cp-1",
+      "name": "Lady Vivienne Sterling",
+      "phone": "8056702505",
+      "email": "vivienne@sterlingevents.co",
+      "notes": "VIP Client - Grand wedding celebration organizer",
+      "totalInquiries": 2,
+      "lastInquiryAt": "2026-10-19T06:07:26.578Z",
+      "createdAt": "2026-10-19T06:07:26.578Z",
+      "updatedAt": "2026-10-19T06:07:26.578Z"
+    },
+    {
+      "id": "cp-1cz3w7",
+      "name": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "totalInquiries": 5,
+      "lastInquiryAt": "2026-10-19T06:29:25.407Z",
+      "createdAt": "2026-10-19T06:07:26.601Z",
+      "updatedAt": "2026-10-19T06:29:25.407Z"
+    },
+    {
+      "id": "cp-xsq0n6",
+      "name": "Akhilesh",
+      "phone": "917401039450",
+      "email": "Akhilesh1212321@gmail.com",
+      "totalInquiries": 1,
+      "lastInquiryAt": "2026-10-19T06:14:38.065Z",
+      "createdAt": "2026-10-19T06:14:38.065Z",
+      "updatedAt": "2026-10-19T06:14:38.065Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "inq-p00hlis6",
+      "referenceCode": "AP-2026-9784",
+      "clientName": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "35-50 guests (2-Tier Grande)",
+      "eventDate": "2026-11-20",
+      "designNotes": "Edible gold leaf accents",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting scheduled",
+      "estimatedPrice": 280,
+      "whatsappSent": false,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T06:29:25.407Z",
+      "updatedAt": "2026-10-19T06:29:25.408Z"
+    },
+    {
+      "id": "inq-nltiphp8",
+      "referenceCode": "AP-2026-1695",
+      "clientName": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "35-50 guests (2-Tier Grande)",
+      "eventDate": "2026-11-20",
+      "designNotes": "Edible gold leaf accents",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting scheduled",
+      "estimatedPrice": 280,
+      "whatsappSent": false,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T06:27:59.169Z",
+      "updatedAt": "2026-10-19T06:27:59.169Z"
+    },
+    {
+      "id": "inq-hjn2bzko",
+      "referenceCode": "AP-2026-2558",
+      "clientName": "Akhilesh",
+      "phone": "917401039450",
+      "email": "Akhilesh1212321@gmail.com",
+      "occasion": "Birthday Celebration",
+      "flavourProfile": "Meyer Lemon Curd & French Lavender",
+      "guestCount": "20-30 guests (2-Tier Compact)",
+      "eventDate": "2026-10-24",
+      "designNotes": "",
+      "status": "NEW",
+      "internalNotes": "",
+      "whatsappSent": true,
+      "customerId": "cp-xsq0n6",
+      "createdAt": "2026-10-19T06:14:38.065Z",
+      "updatedAt": "2026-10-19T06:14:38.065Z"
+    },
+    {
+      "id": "inq-s9zeplrv",
+      "referenceCode": "AP-2026-8488",
+      "clientName": "Margaux Laurent",
+      "phone": "918056702505",
+      "occasion": "Birthday Celebration",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "20-30 guests (2-Tier Compact)",
+      "eventDate": "2026-11-15",
+      "designNotes": "Gold foil macarons topping",
+      "status": "NEW",
+      "internalNotes": "",
+      "whatsappSent": true,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T06:08:56.634Z",
+      "updatedAt": "2026-10-19T06:08:56.634Z"
+    },
+    {
+      "id": "inq-b0dwjq5u",
+      "referenceCode": "AP-2026-4947",
+      "clientName": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "35-50 guests (2-Tier Grande)",
+      "eventDate": "2026-11-20",
+      "designNotes": "Edible gold leaf accents",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting scheduled",
+      "estimatedPrice": 280,
+      "whatsappSent": false,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T06:07:50.497Z",
+      "updatedAt": "2026-10-19T06:07:50.498Z"
+    },
+    {
+      "id": "inq-80yq64v6",
+      "referenceCode": "AP-2026-7494",
+      "clientName": "Test Client",
+      "phone": "918056702505",
+      "email": "test@example.com",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "35-50 guests (2-Tier Grande)",
+      "eventDate": "2026-11-20",
+      "designNotes": "Edible gold leaf accents",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting scheduled",
+      "estimatedPrice": 280,
+      "whatsappSent": false,
+      "customerId": "cp-1cz3w7",
+      "createdAt": "2026-10-19T06:07:26.601Z",
+      "updatedAt": "2026-10-19T06:07:26.601Z"
+    },
+    {
+      "id": "inq-sample-1",
+      "referenceCode": "AP-2026-8812",
+      "clientName": "Lady Vivienne Sterling",
+      "phone": "8056702505",
+      "email": "vivienne@sterlingevents.co",
+      "occasion": "Wedding Reception",
+      "flavourProfile": "Valrhona 70% Dark Truffle",
+      "guestCount": "60-100+ guests (3 to 4-Tier Masterpiece)",
+      "eventDate": "2026-11-02",
+      "designNotes": "Ivory swiss meringue with cascading blush garden roses and 24k gold leaf accents. White-glove delivery to West End Pavilion.",
+      "status": "CONFIRMED",
+      "internalNotes": "Tasting box delivered. Client approved tier composition on WhatsApp.",
+      "estimatedPrice": 380,
+      "whatsappSent": true,
+      "customerId": "cp-1",
+      "createdAt": "2026-10-17T06:07:26.579Z",
+      "updatedAt": "2026-10-19T06:07:26.578Z"
+    },
+    {
+      "id": "inq-sample-2",
+      "referenceCode": "AP-2026-9401",
+      "clientName": "Alexander Hayes",
+      "phone": "7401039450",
+      "email": "alex.hayes@outlook.com",
+      "occasion": "Anniversary",
+      "flavourProfile": "Madagascar Bourbon Vanilla & Wild Berries",
+      "guestCount": "20-30 guests (2-Tier Compact)",
+      "eventDate": "2026-10-27",
+      "designNotes": "Hand-lettered calligraphy inscription: \"Forever & Always\". Gluten-free layer requested.",
+      "status": "NEW",
+      "internalNotes": "Awaiting customer confirmation via WhatsApp.",
+      "estimatedPrice": 165,
+      "whatsappSent": true,
+      "createdAt": "2026-10-19T06:07:26.578Z",
+      "updatedAt": "2026-10-19T06:07:26.578Z"
+    }
+  ],
+  "messageLogs": [
+    {
+      "id": "msg-wnu6slid",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "messageContent": "Test outbound notification",
+      "status": "SENT",
+      "metaMessageId": "wamid.test.12345",
+      "createdAt": "2026-10-19T06:29:25.410Z"
+    },
+    {
+      "id": "msg-i3eulo3r",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "messageContent": "Test outbound notification",
+      "status": "SENT",
+      "metaMessageId": "wamid.test.12345",
+      "createdAt": "2026-10-19T06:27:59.172Z"
+    },
+    {
+      "id": "msg-zxyvu899",
+      "inquiryId": "inq-hjn2bzko",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API (SIMULATED)",
+      "recipientPhone": "917401039450",
+      "senderPhone": "918056702505",
+      "messageContent": "Bonjour Akhilesh! Your bespoke cake enquiry [AP-2026-2558] for Birthday Celebration on 2026-10-24 has been safely logged with Artisanal Patisserie. Our pastry team will review your requests.",
+      "status": "SENT",
+      "metaMessageId": "wamid.simulated.1792390478066.e9kyx7",
+      "createdAt": "2026-10-19T06:14:38.067Z"
+    },
+    {
+      "id": "msg-owtikdcj",
+      "inquiryId": "inq-s9zeplrv",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API (SIMULATED)",
+      "recipientPhone": "918056702505",
+      "senderPhone": "918056702505",
+      "messageContent": "Bonjour Margaux Laurent! Your bespoke cake enquiry [AP-2026-8488] for Birthday Celebration on 2026-11-15 has been safely logged with Artisanal Patisserie. Our pastry team will review your requests.",
+      "status": "SENT",
+      "metaMessageId": "wamid.simulated.1792390136635.8jp07e",
+      "createdAt": "2026-10-19T06:08:56.635Z"
+    },
+    {
+      "id": "msg-yo86nf1i",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "messageContent": "Test outbound notification",
+      "status": "SENT",
+      "metaMessageId": "wamid.test.12345",
+      "createdAt": "2026-10-19T06:07:50.499Z"
+    },
+    {
+      "id": "msg-10ij1lj3",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "messageContent": "Test outbound notification",
+      "status": "SENT",
+      "metaMessageId": "wamid.test.12345",
+      "createdAt": "2026-10-19T06:07:26.605Z"
+    },
+    {
+      "id": "msg-1",
+      "inquiryId": "inq-sample-1",
+      "direction": "OUTBOUND",
+      "channel": "WHATSAPP_CLOUD_API",
+      "recipientPhone": "918056702505",
+      "senderPhone": "918056702505",
+      "messageContent": "Bonjour Lady Vivienne Sterling! Your enquiry AP-2026-8812 has been received at Artisanal Patisserie. Our Chef will review your vision.",
+      "status": "DELIVERED",
+      "metaMessageId": "wamid.HBgMOTE4MDU2NzAyNTA1FQIAERgSMzc5QkI5QUUwNUExOTJEQ0E0AA==",
+      "createdAt": "2026-10-17T06:07:26.579Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud-mal43tk",
+      "entity": "Cake",
+      "entityId": "cake-lc7qwnmy",
+      "action": "CAKE_CREATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "New cake model added: \"Raspberry Champagne Mousse Entremets\" ($78)",
+      "createdAt": "2026-10-19T06:29:48.669Z"
+    },
+    {
+      "id": "aud-5hk7wzy",
+      "entity": "Cake",
+      "entityId": "cake-h6ykabcr",
+      "action": "CAKE_DELETED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" permanently deleted",
+      "createdAt": "2026-10-19T06:29:25.412Z"
+    },
+    {
+      "id": "aud-g4z6f3x",
+      "entity": "Cake",
+      "entityId": "cake-h6ykabcr",
+      "action": "CAKE_UPDATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" updated: isAvailable, startingPrice",
+      "createdAt": "2026-10-19T06:29:25.412Z"
+    },
+    {
+      "id": "aud-z1st3cj",
+      "entity": "Cake",
+      "entityId": "cake-h6ykabcr",
+      "action": "CAKE_CREATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "New cake model added: \"Pistachio Rose Choux Gateau\" ($85)",
+      "createdAt": "2026-10-19T06:29:25.411Z"
+    },
+    {
+      "id": "aud-8tuxnew",
+      "entity": "Inquiry",
+      "entityId": "inq-p00hlis6",
+      "action": "UPDATED",
+      "performedBy": "Admin / Pastry Chef",
+      "details": "Inquiry AP-2026-9784 updated with: status, internalNotes, estimatedPrice",
+      "createdAt": "2026-10-19T06:29:25.408Z"
+    },
+    {
+      "id": "aud-wg99et7",
+      "entity": "Inquiry",
+      "entityId": "inq-p00hlis6",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Test Client (AP-2026-9784)",
+      "createdAt": "2026-10-19T06:29:25.407Z"
+    },
+    {
+      "id": "aud-y8pv10b",
+      "entity": "Cake",
+      "entityId": "cake-vfgcjj8g",
+      "action": "CAKE_DELETED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" permanently deleted",
+      "createdAt": "2026-10-19T06:27:59.176Z"
+    },
+    {
+      "id": "aud-u6ex5du",
+      "entity": "Cake",
+      "entityId": "cake-vfgcjj8g",
+      "action": "CAKE_UPDATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "Cake \"Pistachio Rose Choux Gateau\" updated: isAvailable, startingPrice",
+      "createdAt": "2026-10-19T06:27:59.176Z"
+    },
+    {
+      "id": "aud-i7ek73n",
+      "entity": "Cake",
+      "entityId": "cake-vfgcjj8g",
+      "action": "CAKE_CREATED",
+      "performedBy": "Pastry Chef / Admin",
+      "details": "New cake model added: \"Pistachio Rose Choux Gateau\" ($85)",
+      "createdAt": "2026-10-19T06:27:59.175Z"
+    },
+    {
+      "id": "aud-1zzoxml",
+      "entity": "Inquiry",
+      "entityId": "inq-nltiphp8",
+      "action": "UPDATED",
+      "performedBy": "Admin / Pastry Chef",
+      "details": "Inquiry AP-2026-1695 updated with: status, internalNotes, estimatedPrice",
+      "createdAt": "2026-10-19T06:27:59.169Z"
+    },
+    {
+      "id": "aud-mdwdftn",
+      "entity": "Inquiry",
+      "entityId": "inq-nltiphp8",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Test Client (AP-2026-1695)",
+      "createdAt": "2026-10-19T06:27:59.169Z"
+    },
+    {
+      "id": "aud-ka4ev2u",
+      "entity": "Inquiry",
+      "entityId": "inq-hjn2bzko",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Akhilesh (AP-2026-2558)",
+      "createdAt": "2026-10-19T06:14:38.065Z"
+    },
+    {
+      "id": "aud-rynvft0",
+      "entity": "Inquiry",
+      "entityId": "inq-s9zeplrv",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Margaux Laurent (AP-2026-8488)",
+      "createdAt": "2026-10-19T06:08:56.634Z"
+    },
+    {
+      "id": "aud-ribgr37",
+      "entity": "Inquiry",
+      "entityId": "inq-b0dwjq5u",
+      "action": "UPDATED",
+      "performedBy": "Admin / Pastry Chef",
+      "details": "Inquiry AP-2026-4947 updated with: status, internalNotes, estimatedPrice",
+      "createdAt": "2026-10-19T06:07:50.498Z"
+    },
+    {
+      "id": "aud-bnd6ona",
+      "entity": "Inquiry",
+      "entityId": "inq-b0dwjq5u",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Test Client (AP-2026-4947)",
+      "createdAt": "2026-10-19T06:07:50.497Z"
+    },
+    {
+      "id": "aud-4n2avcm",
+      "entity": "Inquiry",
+      "entityId": "inq-80yq64v6",
+      "action": "UPDATED",
+      "performedBy": "Admin / Pastry Chef",
+      "details": "Inquiry AP-2026-7494 updated with: status, internalNotes, estimatedPrice",
+      "createdAt": "2026-10-19T06:07:26.601Z"
+    },
+    {
+      "id": "aud-hwn9gil",
+      "entity": "Inquiry",
+      "entityId": "inq-80yq64v6",
+      "action": "CREATED",
+      "performedBy": "Client Website Submission",
+      "details": "New enquiry created for Test Client (AP-2026-7494)",
+      "createdAt": "2026-10-19T06:07:26.601Z"
+    },
+    {
+      "id": "aud-1",
+      "entity": "Inquiry",
+      "entityId": "inq-sample-1",
+      "action": "STATUS_UPDATED",
+      "performedBy": "u-admin-1",
+      "details": "Status updated from NEW to CONFIRMED",
+      "createdAt": "2026-10-19T06:07:26.578Z"
+    }
+  ],
+  "cakes": [
+    {
+      "id": "cake-lc7qwnmy",
+      "name": "Raspberry Champagne Mousse Entremets",
+      "slug": "raspberry-champagne-mousse-entremets-lc7q",
+      "description": "Velvet pink champagne mousse with wild raspberry gelee and toasted almond dacquoise base.",
+      "category": "entremets",
+      "tag": "Chef Highlight",
+      "tagType": "signature",
+      "startingPrice": 78,
+      "sizePriceNote": "7-inch Round (8-10 servings) · $78",
+      "sizes": [
+        {
+          "size": "Standard (8-10 servings)",
+          "servings": "8-10 guests",
+          "price": 78
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDzZl9MWWDS9WLsbwtdZPC9os-0-HqWftffxWvA9f_gPZcxxOeOlHwNYefr0BICrpKNfBCKw_W9rZflGeJWfaKMkqWcjZhG_xIwt0k-8lTqABbiiGmxyOd4lu-hxJ9IbQ06eHx0WvBGmNrdecoJkdLDLjtpA6EJzdi7iGLq9dw6kSEAB6Cv304vZong7U7PwEWndxRmCpzMHhUzyWd6YgXEYmLSkapFypAsBrCJ84cWE_mAKDO9bszz0Q",
+      "altText": "Raspberry Champagne Mousse Entremets",
+      "flavours": [
+        "Pink Champagne",
+        "Wild Raspberry",
+        "Almond Dacquoise"
+      ],
+      "isEggless": false,
+      "dietaryNote": "Contains Champagne & Almonds",
+      "isAvailable": true,
+      "isFeatured": true,
+      "leadTimeHours": 48,
+      "customizations": "",
+      "createdAt": "2026-10-19T06:29:48.669Z",
+      "updatedAt": "2026-10-19T06:29:48.669Z"
+    },
+    {
+      "id": "cake-valrhona-fudge",
+      "name": "Noir Valrhona Fudge Torte",
+      "slug": "noir-valrhona-fudge-torte",
+      "category": "chocolate",
+      "tag": "Bestseller",
+      "tagType": "bestseller",
+      "description": "Layers of 70% dark chocolate sponge, silky cocoa ganache, chocolate curls, and 24k edible gold dust.",
+      "startingPrice": 68,
+      "sizePriceNote": "Sizes: 6-inch (8-10) | 8-inch (14-16) · From $68",
+      "sizes": [
+        {
+          "size": "6-inch Round",
+          "servings": "8-10 guests",
+          "price": 68
+        },
+        {
+          "size": "8-inch Round",
+          "servings": "14-16 guests",
+          "price": 92
+        },
+        {
+          "size": "10-inch Grande",
+          "servings": "20-25 guests",
+          "price": 125
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAVwjGBik0CytnEyWI4BjlyIapeQH_qjwR1XrjPUCSRsbypkWnrxRzdRSYJrEWIzc_c8tWgQ8wc2FFpfL4wQtuJXNeLHhyVdkW5q3CGze26-X9pI6PnJ82WJe4cYAAJJsTCYZtWzYUTJTbPbAQOhgsotBmfEbp8hQJ2QGW6ZZQjiuo8KCI7Z_oH2LrmskfZRC8PJ0mioDaj6y3YihaDrzGSqfBPBb_uCkRvkuryMwQrTEODYigfIGfKpg",
+      "altText": "Noir Valrhona Fudge Torte slice with edible gold",
+      "flavours": [
+        "Valrhona 70% Dark Truffle",
+        "Dark Chocolate Ganache",
+        "Sea Salt Caramel Infusion"
+      ],
+      "isEggless": true,
+      "dietaryNote": "100% Eggless Option Available",
+      "isAvailable": true,
+      "isFeatured": true,
+      "leadTimeHours": 48,
+      "customizations": "24k gold leaf inscription, dark chocolate curls, personalized birthday plaque",
+      "createdAt": "2026-10-19T06:27:59.156Z",
+      "updatedAt": "2026-10-19T06:27:59.156Z"
+    },
+    {
+      "id": "cake-le-fraisier",
+      "name": "Le Fraisier Classique",
+      "slug": "le-fraisier-classique",
+      "category": "classic",
+      "tag": "Chef's Signature",
+      "tagType": "signature",
+      "description": "Light genoise sponge soaked in wild berry syrup, layered with diplomat vanilla cream and sweet hand-picked strawberries.",
+      "startingPrice": 72,
+      "sizePriceNote": "Sizes: 7-inch round (10-12 servings) · From $72",
+      "sizes": [
+        {
+          "size": "7-inch Round",
+          "servings": "10-12 guests",
+          "price": 72
+        },
+        {
+          "size": "9-inch Round",
+          "servings": "16-18 guests",
+          "price": 98
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCm7lJ9zZVC4rBnCK4vAVRwB_nLKXB60Ac_eusAOXiqdgXqJifbOQMcIFptWYI1hjpjvTVpMBzIDd6-0SvsFPHlEA0vJO5lxHyS9mjdxir3nYZvfPfzBEn-21ji7Hn_laTCON3b0GlF2NjIYnXHEAgFTFa_kjT6gd-Ral_dX-Oo3EU9oToaaMbWmGGrFhpnUNsWGv06bp-9Xy61zjxOOfwHdSUh49SuiXsjQQ-4DSW-8SIFEhDnBSlCWw",
+      "altText": "Le Fraisier Classique strawberry cake with diplomat cream",
+      "flavours": [
+        "Madagascar Bourbon Vanilla",
+        "Wild Berry Coulis",
+        "Organic Strawberry Cream"
+      ],
+      "isEggless": false,
+      "dietaryNote": "Contains Organic Free-Range Eggs",
+      "isAvailable": true,
+      "isFeatured": true,
+      "leadTimeHours": 48,
+      "customizations": "Hand-piped buttercream flowers, seasonal berry ring, calligraphy banner",
+      "createdAt": "2026-10-19T06:27:59.156Z",
+      "updatedAt": "2026-10-19T06:27:59.156Z"
+    },
+    {
+      "id": "cake-botanical-ivory",
+      "name": "Botanical Ivory Wedding Cake",
+      "slug": "botanical-ivory-wedding-cake",
+      "category": "wedding",
+      "tag": "Custom Consultation",
+      "tagType": "consultation",
+      "description": "Velvet ivory swiss meringue buttercream adorned with organic fresh orchids, peach garden roses, and delicate gold leaf.",
+      "startingPrice": 280,
+      "sizePriceNote": "2, 3 or 4 Tiers (30–120+ guests) · From $280",
+      "sizes": [
+        {
+          "size": "2-Tier Compact",
+          "servings": "30-40 guests",
+          "price": 280
+        },
+        {
+          "size": "3-Tier Grand",
+          "servings": "70-90 guests",
+          "price": 460
+        },
+        {
+          "size": "4-Tier Masterpiece",
+          "servings": "120-150 guests",
+          "price": 680
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGUyBbEnk16qfz1K4NBWWSUTJPbJCzOjigS-Yh3xKXXQhx_BggaNMKnduS8tqbNowSO5U2enCQVeI3pfn7CrMd9Gf6coAGkwgDueq8QxDHfvUH9ucAl-on0LX3OnaT-Tk_PA5jPzLuaI5PvVTYzfpFjUfPqsDGL9tOf2OtqAxXObpmQ5WasOCftFDDsfntleIM2Y42LJzpjMQpPc0wsx0I-X7FFPqJMQun3OnPCaD7ZanywIjkboZh2g",
+      "altText": "Botanical Ivory Tiered Wedding Cake with floral styling",
+      "flavours": [
+        "Vanilla Bean & Rosewater",
+        "Lemon Curd & Lavender",
+        "Hazelnut Praline Croquant"
+      ],
+      "isEggless": true,
+      "dietaryNote": "Eggless Option Available",
+      "isAvailable": true,
+      "isFeatured": true,
+      "leadTimeHours": 120,
+      "customizations": "Fresh organic floral arrangements, edible gold foil accents, customized tier height",
+      "createdAt": "2026-10-19T06:27:59.156Z",
+      "updatedAt": "2026-10-19T06:27:59.156Z"
+    },
+    {
+      "id": "cake-petite-entremets",
+      "name": "Petite Entremets & Macarons",
+      "slug": "petite-entremets-macarons",
+      "category": "entremets",
+      "tag": "Gift Box",
+      "tagType": "gift",
+      "description": "Assortment of handmade Parisian macarons (pistachio, salted caramel, blush raspberry) and glazed mini mousse entremets.",
+      "startingPrice": 42,
+      "sizePriceNote": "Box of 12 or 24 Pieces · From $42",
+      "sizes": [
+        {
+          "size": "Luxury Gift Box (12 Pieces)",
+          "servings": "3-4 guests",
+          "price": 42
+        },
+        {
+          "size": "Grand Degustation Box (24 Pieces)",
+          "servings": "6-8 guests",
+          "price": 76
+        }
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDzZl9MWWDS9WLsbwtdZPC9os-0-HqWftffxWvA9f_gPZcxxOeOlHwNYefr0BICrpKNfBCKw_W9rZflGeJWfaKMkqWcjZhG_xIwt0k-8lTqABbiiGmxyOd4lu-hxJ9IbQ06eHx0WvBGmNrdecoJkdLDLjtpA6EJzdi7iGLq9dw6kSEAB6Cv304vZong7U7PwEWndxRmCpzMHhUzyWd6YgXEYmLSkapFypAsBrCJ84cWE_mAKDO9bszz0Q",
+      "altText": "Petite Entremets and Parisian Macaron Box",
+      "flavours": [
+        "Sicilian Pistachio",
+        "Fleur de Sel Caramel",
+        "Blush Raspberry Rose"
+      ],
+      "isEggless": false,
+      "dietaryNote": "Gluten-conscious, Contains Almonds",
+      "isAvailable": true,
+      "isFeatured": false,
+      "leadTimeHours": 24,
+      "customizations": "Boutique silk ribbon packaging, handwritten gift card",
+      "createdAt": "2026-10-19T06:27:59.156Z",
+      "updatedAt": "2026-10-19T06:27:59.156Z"
+    }
+  ]
+}

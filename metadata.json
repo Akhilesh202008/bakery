@@ -1,0 +1,6 @@
+{
+  "name": "Artisanal Patisserie",
+  "description": "Handcrafted bespoke celebration cakes, French entremets, custom cake enquiry studio, and official WhatsApp Business API integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
